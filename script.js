@@ -1,5 +1,5 @@
 function createGrid(x) {
-    for (let col = 0; col < x*x; col++) {
+    for (let i = 0; i < x*x; i++) {
         const gridArea = document.querySelector("div");
         gridArea.classList.add("grid")
         const square = document.createElement("div");
