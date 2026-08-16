@@ -1,0 +1,14 @@
+.grid {
+    width: 960px;
+    height: 960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
