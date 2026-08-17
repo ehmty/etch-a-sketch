@@ -16,10 +16,20 @@ function createGrid(x) {
         square.classList.add("square");
         square.style.width = 100 / x + "%";
         square.style.height = 100 / x + "%";
+        let opacity = 0.0;
 
         gridArea.appendChild(square);
+        
+        square.addEventListener("mouseenter", () => {
+            const red = Math.floor(Math.random()*256);
+            const green = Math.floor(Math.random()*256);
+            const blue = Math.floor(Math.random()*256);
 
-        square.addEventListener("mouseenter", () => square.style.backgroundColor = "black");
+            if (opacity < 1) opacity += 0.1;
+
+            square.style.background = `rgba(${red},${green},${blue},${opacity})`;
+        });
+
     }
 
     let btn = document.querySelector("button");
