@@ -33,12 +33,18 @@ function createGrid(x) {
 
     btn.addEventListener("click", () => {
         body.removeChild(gridArea);
-        const input = prompt("Please enter a number for the grid x*x");
-        createGrid(input);
-    })
-    
 
-}
+        let input;
+        while (true) {
+            input = +prompt("Please enter a number x <= 100 for your grid (x*x)");
+            if (input <= 100) {
+                break;
+            } else alert("Please enter e number <= 100!");
+        }
+        
+        createGrid(input);
+    });
+};
 
 
 createGrid(64);
