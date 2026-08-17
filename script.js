@@ -41,10 +41,10 @@ function createGrid(x) {
                 break;
             } else alert("Please enter e number <= 100!");
         }
-        
+
         createGrid(input);
     });
 };
 
 
-createGrid(64);
+createGrid(16);
