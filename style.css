@@ -11,3 +11,8 @@
     margin: 0;
     padding: 0;
 }
+
+.btn {
+    padding: 6px;
+    margin-bottom: 12px;
+}

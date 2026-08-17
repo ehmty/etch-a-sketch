@@ -1,7 +1,9 @@
+const gridArea = document.querySelector("div");
+const body = document.querySelector("body");
+
 function createGrid(x) {
     for (let i = 0; i < x*x; i++) {
 
-        const gridArea = document.querySelector("div");
         gridArea.classList.add("grid")
 
         const square = document.createElement("div");
@@ -15,4 +17,12 @@ function createGrid(x) {
     }
 }
 
+function createButton () {
+    const btn = document.createElement("button");
+    btn.textContent = "new Grid";
+    btn.classList.add("btn");
+    body.insertBefore(btn, gridArea);
+}
+
 createGrid(64);
+createButton();
