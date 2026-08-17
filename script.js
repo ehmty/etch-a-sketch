@@ -1,7 +1,6 @@
-let gridArea = document.querySelector("div");
-const body = document.querySelector("body");
-
 function createGrid(x) {
+    const body = document.querySelector("body");
+
     let gridArea = document.querySelector("div");
     if (!gridArea) {
         gridArea = document.createElement("div");
